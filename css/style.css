@@ -1,0 +1,83 @@
+@font-face {
+    font-family: "HYWenHei-85W";
+    src: url("../font/HYWenHei-85W.ttf");
+}
+
+html{
+    font-family: HYWenHei-85W, serif;
+}
+
+body{
+    background: url("../img/bodyimg.jpg") no-repeat fixed center;
+    background-size: cover;
+    /*overflow-x: hidden;*/
+    /*overflow-y: hidden;*/
+}
+
+.main-bg{
+    margin-top: 1%;
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color: #ffffffa0;
+    border-radius: 12px;
+    padding: 1%;
+    overflow: auto;
+}
+
+.main-content{
+    float: left;
+    width: 60%;
+}
+
+li{
+    font-size: 18px;
+    opacity: 85%;
+}
+
+h1::before{
+    content: "";
+    display: inline-block;
+    position: relative;
+    transform: translateY(14%);
+    border-radius: 1em;
+    width: .25em;
+    height: 1em;
+    background-color: #87CEFA;
+}
+
+#bar{
+    margin: -8px;
+    list-style-type: none;
+    height: 80px;
+    padding: 10px;
+    background-color: #ffffff !important;
+    position: sticky;
+    top: 0;
+    border-radius: 12px;
+    opacity: 85%;
+    z-index: 9999;
+}
+
+.bar_wrapper{
+    float: left;
+}
+
+div.bar_wrapper a{
+    font-size: 24px;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 25px 20px 25px 20px;
+    width: 100px;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.1s linear;
+}
+
+div.bar_wrapper a:hover{
+    background-color: #87CEFA;
+    transition: background-color 0.1s linear;
+}
+p{
+    list-style-type: disc;
+}
