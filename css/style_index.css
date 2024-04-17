@@ -103,9 +103,19 @@ div.bar_wrapper a{
 }
 
 div.bar_wrapper a:hover{
-    background-color: #87CEFA;
+    background-color: #87CEFAD0;
     transition: background-color 0.1s linear;
 }
+
 p{
     list-style-type: disc;
+}
+
+footer{
+    margin-top: -50px;
+    text-align: center;
+    padding: 40px;
+    width: 100%;
+    background-color: #ffffffa0;
+    z-index: 9999;
 }

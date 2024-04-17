@@ -80,6 +80,10 @@ li{
     opacity: 85%;
 }
 
+h1{
+    opacity: 75%;
+}
+
 h1::before{
     content: "";
     display: inline-block;
@@ -96,8 +100,9 @@ h1::before{
     list-style-type: none;
     height: 80px;
     padding: 10px;
-    background-color: #ffffffd0 !important;
+    background-color: #ffffff !important;
     position: sticky;
+    opacity: 85%;
     top: 0;
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
@@ -121,7 +126,7 @@ div.bar_wrapper a{
 }
 
 div.bar_wrapper a:hover{
-    background-color: #87CEFA;
+    background-color: #87CEFAD0;
     transition: background-color 0.1s linear;
 }
 p{
