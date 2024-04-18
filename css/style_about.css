@@ -10,7 +10,7 @@ html{
 body{
     display: flex;
     min-height: 98.7vh;
-    background: url("../img/Christmas.jpg") no-repeat fixed center;
+    background: url("../img/bodyimg_2.jpg") no-repeat fixed center;
     background-size: cover;
     overflow-x: hidden;
     flex-direction: column;
@@ -65,7 +65,7 @@ div.bar_wrapper a:hover{
     border-radius: 12px;
     padding: 1%;
     overflow-x: hidden;
-    /*min-width: 1000px;*/
+    min-width: 1000px;
 }
 
 .head::before{
@@ -136,7 +136,35 @@ h1::before{
     background-color: #87CEFA;
 }
 
+.project_block{
+    font-size: 24px;
+    padding: 1%;
+    width: 240px;
+    height: 240px;
+    /*紫色*/
+    /*background: linear-gradient(135deg, #c850c0, #4158d0);*/
+    /*橙色*/
+    /*background: linear-gradient(135deg, #f6d365, #fda085);*/
+    /*灰色*/
+    /*background: linear-gradient(135deg, #292a3a, #536976);*/
+    /*金属质感*/
+    /*background: linear-gradient(135deg, #272727, #4a4a4a, #6d6d6d, #909090, #b3b3b3, #d6d6d6, #f9f9f9);*/
+    /*蓝白*/
+    background: linear-gradient(270deg, #c7e9fb, #a6defa, #80d4f9, #5bc9f8, #35bef7);
+    border-radius: 12px;
+    margin-right: -100px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-out;
+}
 
+.project_block:hover{
+    transform: translateY(-60px);
+    /*background: linear-gradient(270deg, #4158d0, #c850c0, #cf7bc8, #f9fdff, #f3bcef);*/
+    background: linear-gradient(270deg, #c7e9fb, #a6defa, #80d4f9, #5bc9f8, #35bef7);
+    margin-right: 20px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-out;
+}
 
 p{
     list-style-type: disc;
