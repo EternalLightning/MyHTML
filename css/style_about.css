@@ -8,92 +8,16 @@ html{
 }
 
 body{
-   background: url("../img/Christmas.jpg") no-repeat fixed center;
-   background-size: cover;
-   overflow-x: hidden;
+    display: flex;
+    min-height: 98.7vh;
+    background: url("../img/Christmas.jpg") no-repeat fixed center;
+    background-size: cover;
+    overflow-x: hidden;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.head::before{
-    content: "";
-    display: inline-block;
-    position: relative;
-    /* transform: translateY(16%); */
-    border-radius: 1em;
-    width: 8px;
-    height: 280px;
-    background-color: #87CEFA;
-}
-
-#name{
-    display: inline-block;
-    position: relative;
-    top: 10px;
-    left: 30px;
-    opacity: 75%;
-    overflow: hidden;
-}
-
-.icon_block{
-    position: relative;
-    left: 30px;
-    width: 800px;
-}
-
-.icon_block a{
-    text-decoration: none;
-    margin-right: 20px;
-    display: inline;
-}
-
-.icon_block a svg{
-    position: relative;
-    width: 60px;
-    height: 60px;
-    transition: all 0.1s linear;
-}
-
-.icon_block a svg:hover{
-    position: relative;
-    width: 80px;
-    height: 80px;
-    transition: all 0.1s linear;
-}
-
-.main-bg{
-    margin-top: 10vh;
-    margin-left: 20%;
-    margin-right: 20%;
-    background-color: #ffffffa0;
-    border-radius: 12px;
-    padding: 1%;
-    overflow: auto;
-    min-width: 1000px;
-}
-
-.main-content{
-    width: 60%;
-    margin-top: 0;
-}
-
-li{
-    font-size: 18px;
-    opacity: 85%;
-}
-
-h1{
-    opacity: 75%;
-}
-
-h1::before{
-    content: "";
-    display: inline-block;
-    position: relative;
-    transform: translateY(16%);
-    border-radius: 1em;
-    width: .25em;
-    height: 1lh;
-    background-color: #87CEFA;
-}
+/*顶部导航栏部分*/
 
 #bar{
     margin: -8px;
@@ -129,6 +53,100 @@ div.bar_wrapper a:hover{
     background-color: #87CEFAD0;
     transition: background-color 0.1s linear;
 }
+
+/*主要内容部分*/
+
+.main-bg{
+    margin: 100px auto 100px;
+    max-width: 1500px;
+    background-color: #ffffffa0;
+    border-radius: 12px;
+    padding: 1%;
+    overflow: auto;
+    /*min-width: 1000px;*/
+}
+
+.head::before{
+    content: "";
+    display: inline-block;
+    position: relative;
+    /* transform: translateY(16%); */
+    border-radius: 1em;
+    width: 8px;
+    height: 280px;
+    background-color: #87CEFA;
+}
+
+#name{
+    position: relative;
+    top: 10px;
+    left: 30px;
+    opacity: 75%;
+    overflow: hidden;
+}
+
+.icon_block{
+    position: relative;
+    left: 30px;
+    width: 800px;
+}
+
+.icon_block a{
+    text-decoration: none;
+    margin-right: 20px;
+    display: inline;
+}
+
+.icon_block a svg{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    transition: all 0.1s linear;
+}
+
+.icon_block a svg:hover{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    transition: all 0.1s linear;
+}
+
+
+
+li{
+    font-size: 18px;
+    opacity: 85%;
+}
+
+h1{
+    opacity: 75%;
+}
+
+h1::before{
+    content: "";
+    display: inline-block;
+    position: relative;
+    transform: translateY(16%);
+    border-radius: 1em;
+    width: .25em;
+    height: 1lh;
+    background-color: #87CEFA;
+}
+
+
+
 p{
     list-style-type: disc;
+}
+
+/*页脚部分*/
+
+footer{
+    margin: -8px;
+    text-align: center;
+    padding: 40px;
+    background-color: #ffffffdd;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    z-index: 9999;
 }
