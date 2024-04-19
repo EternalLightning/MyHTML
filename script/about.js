@@ -9,11 +9,9 @@ window.addEventListener('scroll', function() {
     navbar.style.opacity = opacity.toString();
 });
 
-function onTopClick() {
-    var contact = onclick()
-    contact.scrollIntoView({
-        behavior: "smooth",
-        block: "center",
-        inline: "nearest"
-    });
-}
+const navRightClick = document.getElementById('nav_right');
+navRightClick.addEventListener('click', function(){
+    Object.assign(nav, {
+        transform: transform
+    })
+})
