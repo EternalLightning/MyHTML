@@ -8,3 +8,12 @@ window.addEventListener('scroll', function() {
     // 更新透明度
     navbar.style.opacity = opacity.toString();
 });
+
+function onTopClick() {
+    var contact = onclick()
+    contact.scrollIntoView({
+        behavior: "smooth",
+        block: "center",
+        inline: "nearest"
+    });
+}
