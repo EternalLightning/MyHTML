@@ -9,9 +9,17 @@ window.addEventListener('scroll', function() {
     navbar.style.opacity = opacity.toString();
 });
 
-const navRightClick = document.getElementById('nav_right');
+var navRightClick = document.getElementById('nav_trigger');
+var sideBar = document.querySelector('nav');
+
+window.addEventListener('click', e => {
+    var target = e.target;
+    if(!target.contains(sideBar) && !target.contains(navRightClick)){
+        sideBar.classList.remove('show');
+    }
+});
+
 navRightClick.addEventListener('click', function(){
-    Object.assign(nav, {
-        transform: transform
-    })
-})
+    sideBar.classList.add('show');
+});
+
