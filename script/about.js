@@ -9,17 +9,21 @@ window.addEventListener('scroll', function() {
     navbar.style.opacity = opacity.toString();
 });
 
-var navRightClick = document.getElementById('nav_trigger');
 var sideBar = document.querySelector('nav');
+var navRightClick = document.getElementById('nav_trigger');
+var mask = document.getElementById('mask');
 
-window.addEventListener('click', e => {
+window.addEventListener('click', function(e) {
     var target = e.target;
-    if(!target.contains(sideBar) && !target.contains(navRightClick)){
-        sideBar.classList.remove('show');
+    console.log(target);
+    if (target.contains(mask)) {
+        sideBar.classList.remove('showNav');
+        mask.classList.remove('showMask');
     }
 });
 
-navRightClick.addEventListener('click', function(){
-    sideBar.classList.add('show');
+navRightClick.addEventListener('click', function() {
+    console.log(1);
+    sideBar.classList.add('showNav');
+    mask.classList.add('showMask');
 });
-
