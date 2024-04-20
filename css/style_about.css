@@ -79,13 +79,15 @@ div.bar_wrapper a:hover{
 /*右侧导航栏部分*/
 
 nav{
+    display: flex;
+    flex-direction: column;
     position: fixed;
     right: 0;
     top: 0;
     width: 500px;
     height: 100vh;
     transform: translateX(500px);
-    background-color: black;
+    background-color: white;
     z-index: 15000;
     transition: all 0.3s ease-out;
 }
