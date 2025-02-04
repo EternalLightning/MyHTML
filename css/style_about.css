@@ -243,8 +243,14 @@ footer{
 
 @media screen and (orientation: portrait) {
     body {
+        margin: 0;
+        display: flex;
+        min-height: 98.7vh;
+        background: url("../img/portrait.jpg") no-repeat fixed center;
+        background-size: cover;
+        overflow-x: hidden;
         flex-direction: column;
-        justify-content: flex-start;
+        justify-content: space-between;
     }
 
     #bar {
@@ -332,7 +338,7 @@ footer{
 
     .main-bg {
         margin: 50px auto;
-        max-width: 100%;
+        max-width: 86%;
         min-width: auto;
         padding: 10px;
     }
@@ -382,7 +388,11 @@ footer{
     }
 
     footer {
-        font-size: 14px;
-        padding: 20px;
+        text-align: center;
+        padding: 40px;
+        background-color: #ffffffdd;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+        z-index: 1000;
     }
 }
